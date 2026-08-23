@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home - HR Employee Attrition System
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <h1>HR Employee Attrition AI System</h1>
+    <h2>Predict Employee Attrition & Enhance Workforce Retention</h2>
+    <p>
+        Analyze employee demographics, job role, monthly income, overtime status, job satisfaction, 
+        work-life balance, and career progression to accurately predict attrition risks and enable proactive HR retention strategies.
+    </p>
+    <div class="buttons">
+        <a href="{{ url_for('prediction') }}" class="btn">
+            🎯 Predict Employee Attrition
+        </a>
+        <a href="{{ url_for('dashboard') }}" class="btn secondary">
+            📊 View HR Dashboard
+        </a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>About the Platform</h2>
+    <p>
+        The HR Employee Attrition AI Platform leverages advanced machine learning classification algorithms to analyze workforce data 
+        and identify key drivers behind employee turnover. 
+    </p>
+    <p>
+        HR managers and organizational leaders can assess individual employee attrition probabilities, evaluate departmental risk factors, 
+        and formulate targeted retention policies to reduce costly employee turnover.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Key System Capabilities</h2>
+    <div class="cards">
+        <div class="card stat-primary">
+            <h3>📂 HR Dataset Core</h3>
+            <p>Load and inspect 1,470 employee records across 35 workforce attributes.</p>
+        </div>
+
+        <div class="card stat-warning">
+            <h3>🔧 Preprocessing Engine</h3>
+            <p>Clean data, handle missing values, scale features, and apply multi-encoder techniques.</p>
+        </div>
+
+        <div class="card stat-success">
+            <h3>📈 EDA & Visualization</h3>
+            <p>Explore correlation matrices, income boxplots, and departmental attrition distributions.</p>
+        </div>
+
+        <div class="card stat-primary">
+            <h3>🤖 Machine Learning Models</h3>
+            <p>Train Logistic Regression, Random Forest, Decision Trees, and KNN classifiers.</p>
+        </div>
+
+        <div class="card stat-danger">
+            <h3>🎯 Attrition Risk Predictor</h3>
+            <p>Predict individual employee attrition likelihood with real-time risk scores.</p>
+        </div>
+
+        <div class="card stat-success">
+            <h3>📋 HR Analytics Reports</h3>
+            <p>Generate downloadable retention summaries and preprocessing audit reports.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section workflow">
+    <h2>Data Pipeline Architecture</h2>
+    <div class="flow">
+        <span>Raw HR Data</span>
+        <b>→</b>
+        <span>Data Cleaning & Encoding</span>
+        <b>→</b>
+        <span>Feature Scaling</span>
+        <b>→</b>
+        <span>ML Classification Model</span>
+        <b>→</b>
+        <span>Attrition Risk Score</span>
+        <b>→</b>
+        <span>HR Retention Strategy</span>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Ready to Evaluate Workforce Attrition?</h2>
+    <p style="color: #e2e8f0; margin-bottom: 24px;">Run instant attrition predictions for current employees or new hires.</p>
+    <a href="{{ url_for('prediction') }}" class="btn">
+        Start Attrition Analysis
+    </a>
+</section>
+
+{% endblock %}
