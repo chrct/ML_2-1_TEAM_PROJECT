@@ -1,0 +1,9 @@
+Item,Details
+Input Dataset,C:\Users\chrct\PycharmProjects\HR-Employee-Attrition-main\dataset\final_preprocess.csv
+Output Folder,C:\Users\chrct\PycharmProjects\HR-Employee-Attrition-main\outputs\pca_dimensionality_reduction
+Features Used,All numeric attributes
+PCA Method,Principal Component Analysis
+Scaling Method,StandardScaler
+Missing Value Handling,Median imputation
+Variance Retention Analysis,"80%, 90%, 95%"
+Original Dataset Modified,NO

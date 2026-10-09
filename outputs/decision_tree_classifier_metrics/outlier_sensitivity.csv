@@ -1,0 +1,12 @@
+Measure,Value
+Total Observations,1470.0
+Outlier Observations,691.0
+Normal Observations,779.0
+Outlier Percentage,47.006802721088434
+Outlier Precision,0.8067813729456452
+Outlier Recall,0.7916063675832128
+Outlier F1,0.7986809084206894
+Normal Precision,0.7623064795759141
+Normal Recall,0.748395378690629
+Normal F1,0.7549018373412278
+Outlier Sensitivity Difference,-0.04377907107946155

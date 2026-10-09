@@ -1,0 +1,10 @@
+Item,Details
+Input Dataset,C:\Users\chrct\PycharmProjects\HR-Employee-Attrition-main\dataset\final_preprocess.csv
+Output Folder,C:\Users\chrct\PycharmProjects\HR-Employee-Attrition-main\outputs\dbscan_clustering_preprocessed
+Original Dataset Modified,NO
+Features Used,"Age, TotalWorkingYears, MonthlyIncome"
+Preprocessing,Existing preprocessed dataset
+Scaling,StandardScaler
+Algorithm,DBSCAN
+eps,0.8
+min_samples,10
